@@ -43,7 +43,6 @@ class mywindow(QtWidgets.QMainWindow):
 
         self.ui.exit.clicked.connect(self.quit)
 
-        self.ui.pushButton.clicked.connect(self.select)
 
     def select(self):
         filepath, type = QtWidgets.QFileDialog.getOpenFileName(self, 'Выберите файлы',".","PNG Файлы(*.png)")
