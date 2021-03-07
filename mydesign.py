@@ -26,15 +26,9 @@ class Ui_GEO_OTVAL(object):
         self.centralwidget = QtWidgets.QWidget(GEO_OTVAL)
         self.centralwidget.setStyleSheet("")
         self.centralwidget.setObjectName("centralwidget")
-        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(20, 10, 511, 41))
         font = QtGui.QFont()
         font.setFamily("Roboto")
-        self.pushButton.setFont(font)
-        self.pushButton.setStyleSheet("background-color: rgb(49, 52, 58);\n"
-"border-radius: 10%;\n"
-"color: rgb(255, 255, 255)")
-        self.pushButton.setObjectName("pushButton")
+
         self.edit_x = QtWidgets.QLineEdit(self.centralwidget)
         self.edit_x.setGeometry(QtCore.QRect(380, 110, 91, 31))
         font = QtGui.QFont()
@@ -161,7 +155,6 @@ class Ui_GEO_OTVAL(object):
     def retranslateUi(self, GEO_OTVAL):
         _translate = QtCore.QCoreApplication.translate
         GEO_OTVAL.setWindowTitle(_translate("GEO_OTVAL", "MainWindow"))
-        self.pushButton.setText(_translate("GEO_OTVAL", "Загрузить изображение"))
         self.edit_x.setText(_translate("GEO_OTVAL", "4183642"))
         self.makeMap.setText(_translate("GEO_OTVAL", "Создать карту с заданными параметрами"))
         self.makeClear.setText(_translate("GEO_OTVAL", "Очистить"))
