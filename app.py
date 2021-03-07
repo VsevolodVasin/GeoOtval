@@ -19,8 +19,8 @@ from shapely.geometry import Point, LineString
 import geojson
 import requests
 
-apikey = 'BK-edGr0lp6THLePoWUGoI-YbLX0oB4-scGf1gvCPGM'
-
+apikey = 'yourhereapi-restkey'
+#https://www.here.com/
 
 class mywindow(QtWidgets.QMainWindow):
     def __init__(self):
