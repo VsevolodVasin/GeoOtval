@@ -35,13 +35,14 @@ class mywindow(QtWidgets.QMainWindow):
         self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
 
         self.ui.otr.addItem("Отобразить в исходном состоянии")
-        self.ui.otr.addItem("Повернуть на 90° вправо")
-        self.ui.otr.addItem("Повернуть на 180° вправо")
-        self.ui.otr.addItem("Повернуть на 270° вправо")
+        self.ui.otr.addItem("Повернуть на 90°")
+        self.ui.otr.addItem("Повернуть на 180°")
+        self.ui.otr.addItem("Повернуть на 270°")
 
         self.ui.makeMap.clicked.connect(self.start)
 
         self.ui.exit.clicked.connect(self.quit)
+
 
 
     def select(self):
@@ -51,7 +52,7 @@ class mywindow(QtWidgets.QMainWindow):
 
     def start(self):
 
-
+        povorot=0
         if(self.ui.lineEdit.text() ==''):
             dlina = 6 
         else:
@@ -64,13 +65,13 @@ class mywindow(QtWidgets.QMainWindow):
         if otr == "Отобразить в исходном состоянии":
             povorot = 0
 
-        if otr == "Повернуть на 90° вправо":
+        if otr == "Повернуть на 90°":
             povorot = 1
 
-        if otr == "Повернуть на 180° вправо":
+        if otr == "Повернуть на 180°":
             povorot = 2
 
-        if otr == "Повернуть на 270° вправо":
+        if otr == "Повернуть на 270°":
             povorot = 3
 
 
